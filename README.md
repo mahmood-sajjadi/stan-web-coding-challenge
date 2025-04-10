@@ -1,24 +1,24 @@
-# Stan Coding Challenge
+# Stan Web Coding Challenge
 
-> Welcome to the Stan Coding Challenge!
+> Welcome to the Stan Web Coding Challenge!
 
 ## Overview
 
-To complete this challenge, you will need to write a simple [React](https://facebook.github.io/react/) based web app, and provide us the source files to be built.
+To complete this challenge, you will need to write a simple [Svelte](https://svelte.dev/), [React](https://react.dev/), or equivalent web app.
 
 The purpose of this challenge is to assess your **skills and approach to composing a simple web app** given a set of screens and an API feed. We will also assess the **generated HTML, CSS, and JS** output.
 
-This challenge is expected to take about 2-4 hours.
+This challenge is expected to take around 2-4 hours.
 
 ## The Challenge
 
-It's pretty simple. Using the provided screens as a reference, you'll need to build a set of React components to render the app. You'll also need to request a JSON feed, filter that data, and use the relevant fields.
+It's pretty simple. Using the provided screens as a reference, you will need to build a set of components to render the app. You'll also need to request a JSON feed, filter that data, and use the relevant fields.
 
 Although this is a basic exercise, we'll be looking for **simple, well-designed, performant, and tested code** in the submission.
 
-Please include a `README` with setup instructions, and any tests or other documentation you created as part of your solution.
+Please include a `README` with the setup instructions, and any tests or other documentation you created as part of your solution.
 
-Also, add the following info to your `README`:
+You may also add the following information to your `README`:
 
 - How did you decide on the technical and architectural choices used as part of your solution?
 - Are there any improvements you could make to your submission?
@@ -26,7 +26,7 @@ Also, add the following info to your `README`:
 
 ## Details
 
-You will need to build the following 3 pages with React:
+You will need to build the following 3 pages:
 
 - A "Home" page
 - A "Series" page
@@ -81,7 +81,9 @@ You will also need to handle the loading and error states of fetching the JSON f
 
 ### What language, framework, build tool... should I use?
 
-You may use whatever you like as long as the solution is built using [React](https://facebook.github.io/react/) or an equivalent library.
+You may use whatever you like as long as the solution is built using [Svelte](https://svelte.dev/), [React](https://react.dev/), or an equivalent library.
+
+We prefer the use of [TypeScript](https://www.typescriptlang.org/).
 
 We prefer it if you did not use any third party CSS frameworks.
 
@@ -91,7 +93,8 @@ We also prefer the use of minimal dependencies.
 
 - [Bitbucket](https://bitbucket.org/) - Source code hosting, with free private repositories for small teams.
 - [Google Fonts - Raleway](https://fonts.google.com/?selection.family=Raleway)
-- [React](https://facebook.github.io/react/)
+- [Svelte](https://svelte.dev/)
+- [React](https://react.dev/)
 
 ## Other Notes
 
