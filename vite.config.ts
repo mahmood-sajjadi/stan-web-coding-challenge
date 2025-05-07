@@ -13,7 +13,7 @@ export default defineConfig({
         secure: false,
         configure: (proxy) => {
           proxy.on('proxyReq', (_, req, res) => {
-            if (req.url === '/api/series' || req.url === '/api/movies') {
+            if (req.url === '/api/list') {
               res.writeHead(200, { 'Content-Type': 'application/json' });
               res.end(JSON.stringify(mockResponse));
             }
