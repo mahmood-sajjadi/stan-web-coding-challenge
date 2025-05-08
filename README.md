@@ -46,11 +46,18 @@ but each specific service for each endpoint is to handle different methods like 
 - if the poster ratio is different from others, it will be contained in the box (maybe smaller than the others but will ensure the entire poster is visible)
 
 ## FAQ
-### is context a good choice for API response?
+### Is context a good choice for API response?
 Not in real life, as we will have pagination, or infinite scroll, or etc, and we are going to call api many time
 But in real life, we are not going to have one API for everything, and due to this reason the structure of the code will be completely different
 As this code was very simple and small, and API will be called only once, context is a good choice
 Also I was aiming to not adding another dependency like state managements only for this API call (it is an overkill for this case)
+
+### Why most of the test cases are toMatchSnapshot?
+This code/challenge is mainly a CSS and Html challenge, does not hold too many logics (almost none).
+Due to this reason almost there is no logic to test it in unit test.
+But there are so many reusable elements and styles which needs to get tested.
+as the style is inline and the assumption is in real life applications these reusable components used in many places, changing them (even slightly) may break the UI/UX, testing the reusable components with `toMatchSnapshot` is a good choice to prevent these issues.
+any place that we want to make sure a logic will be applied like helper functions, logic get tested.  
 
 ## TODO / Pending
 - Add more test cases
