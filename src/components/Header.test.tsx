@@ -1,13 +1,16 @@
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import {Header} from './Header'
 
 describe('Header', () => {
-  it('renders the Header component', () => {
+  it('renders the Header component', async () => {
+    const content = 'test header text';
     const header = render(
         <Header>
-            test header text
+            {content}
         </Header>
     );
+    const contentResult = await screen.findByText(content);
     expect(header).toMatchSnapshot();
+    expect(contentResult).toBeTruthy()
   })
 })
