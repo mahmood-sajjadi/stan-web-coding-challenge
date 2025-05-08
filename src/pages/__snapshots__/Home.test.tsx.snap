@@ -1,0 +1,290 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Home > renders the Home component 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        style="display: grid; grid-template-columns: repeat(auto-fit, 100px);"
+      >
+        <a
+          data-discover="true"
+          href="/series"
+          style="text-decoration: none; width: 100px;"
+        >
+          <div
+            style="width: 100px; height: 200px; margin: 0px auto; color: black;"
+          >
+            <div
+              aria-description="Popular Series"
+              class="glass"
+              style="width: 100%; height: 150px; background-position: center; background-repeat: no-repeat; background-size: cover; text-align: center; background-image: url("/placeholder.png"); background-color: black; color: white; line-height: 150px; font-weight: bold; font-size: 25px; text-transform: uppercase;"
+            >
+              Series
+            </div>
+            <span
+              style="font-size: 10px;"
+            >
+              Popular Series
+            </span>
+          </div>
+        </a>
+        <a
+          data-discover="true"
+          href="/movie"
+          style="text-decoration: none; width: 100px;"
+        >
+          <div
+            style="width: 100px; height: 200px; margin: 0px auto; color: black;"
+          >
+            <div
+              aria-description="Popular Movies"
+              class="glass"
+              style="width: 100%; height: 150px; background-position: center; background-repeat: no-repeat; background-size: cover; text-align: center; background-image: url("/placeholder.png"); background-color: black; color: white; line-height: 150px; font-weight: bold; font-size: 25px; text-transform: uppercase;"
+            >
+              Movies
+            </div>
+            <span
+              style="font-size: 10px;"
+            >
+              Popular Movies
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      style="display: grid; grid-template-columns: repeat(auto-fit, 100px);"
+    >
+      <a
+        data-discover="true"
+        href="/series"
+        style="text-decoration: none; width: 100px;"
+      >
+        <div
+          style="width: 100px; height: 200px; margin: 0px auto; color: black;"
+        >
+          <div
+            aria-description="Popular Series"
+            class="glass"
+            style="width: 100%; height: 150px; background-position: center; background-repeat: no-repeat; background-size: cover; text-align: center; background-image: url("/placeholder.png"); background-color: black; color: white; line-height: 150px; font-weight: bold; font-size: 25px; text-transform: uppercase;"
+          >
+            Series
+          </div>
+          <span
+            style="font-size: 10px;"
+          >
+            Popular Series
+          </span>
+        </div>
+      </a>
+      <a
+        data-discover="true"
+        href="/movie"
+        style="text-decoration: none; width: 100px;"
+      >
+        <div
+          style="width: 100px; height: 200px; margin: 0px auto; color: black;"
+        >
+          <div
+            aria-description="Popular Movies"
+            class="glass"
+            style="width: 100%; height: 150px; background-position: center; background-repeat: no-repeat; background-size: cover; text-align: center; background-image: url("/placeholder.png"); background-color: black; color: white; line-height: 150px; font-weight: bold; font-size: 25px; text-transform: uppercase;"
+          >
+            Movies
+          </div>
+          <span
+            style="font-size: 10px;"
+          >
+            Popular Movies
+          </span>
+        </div>
+      </a>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Home > renders the Home component WHEN error 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      Oops, something went wrong...
+    </div>
+  </body>,
+  "container": <div>
+    Oops, something went wrong...
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Home > renders the Home component WHEN pending 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      Loading...
+    </div>
+  </body>,
+  "container": <div>
+    Loading...
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

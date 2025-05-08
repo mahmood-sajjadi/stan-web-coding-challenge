@@ -1,8 +1,9 @@
 import { useMemo } from "react";
 
 type Props = {
-    children?: React.ReactNode,
-    posterArtUrl: string,
+    children?: React.ReactNode;
+    className?: string;
+    posterArtUrl: string;
     title: string;
     wrapperStyle?: React.CSSProperties;
     posterStyle?: React.CSSProperties;
@@ -17,6 +18,10 @@ const itemStyleBase = {
 const posterStyleBase = {
     width: '100%',
     height: '150px',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'contain',
+    textAlign: 'center',
 }
 
 const titleStyle = {
@@ -24,7 +29,7 @@ const titleStyle = {
 }
 
 export function Item(props: Props) {
-    const { posterArtUrl, title, wrapperStyle, posterStyle, children } = props;
+    const { posterArtUrl, title, wrapperStyle, posterStyle, className, children } = props;
 
     const itemStyle = useMemo(() => ({
         ...itemStyleBase,
@@ -34,16 +39,12 @@ export function Item(props: Props) {
     const imageStyle = useMemo(() => ({
         ...posterStyleBase,
         backgroundImage: `url(${posterArtUrl})`,
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        textAlign: 'center',
         ...posterStyle,
     }), [posterArtUrl, posterStyle]);
 
     return (
         <div style={itemStyle}>
-            <div style={imageStyle} aria-description={title}>
+            <div style={imageStyle} className={className} aria-description={title}>
                 {children}
             </div>
             <span style={titleStyle}>{title}</span>

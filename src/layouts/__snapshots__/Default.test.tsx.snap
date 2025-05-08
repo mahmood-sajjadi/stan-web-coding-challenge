@@ -1,0 +1,358 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Default > renders the Default component 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header
+        style="display: box; width: 100%; position: fixed; top: 0px; left: 0px;"
+      >
+        <div
+          style="display: box; width: calc(100% - 200px); height: 30px; background: linear-gradient(0deg,rgb(46, 149, 250) 0%, rgb(18, 100, 246) 100%); box-shadow: 0px 3px 3px rgb(45, 45, 45); position: relative; z-index: 1; padding: 10px 100px 10px 100px; color: white; font-size: 25px;"
+        >
+          DEMO Streaming
+          <div
+            style="padding-top: 10px; padding-bottom: 10px; font-size: 10px; float: right;"
+          >
+            <span
+              style="margin-right: 10px;"
+            >
+              Log in
+            </span>
+            <div
+              style="color: white; background: linear-gradient(0deg,rgb(68, 68, 68) 0%, rgb(51, 51, 51) 100%); display: inline; padding: 10px;"
+            >
+              Start your free trial
+            </div>
+          </div>
+        </div>
+        <div
+          style="display: box; width: calc(100% - 200px); height: 30px; background: rgb(65, 65, 65); padding: 10px 100px 10px 100px; color: white; font-size: 25px;"
+        />
+      </header>
+      <main
+        style="margin-top: 100px; padding: 20px 100px 200px 100px;"
+      >
+        test content
+      </main>
+      <footer
+        style="background-color: rgb(30, 30, 30); display: block; width: calc(100% - 200px); color: rgb(195, 192, 187); font-size: 10px; padding-right: 100px; padding-left: 100px; position: absolute; height: 200px; bottom: 0px;"
+      >
+        <nav>
+          <ul
+            id="footer-nav"
+            style="display: flex; align-items: center; padding: 0px;"
+          >
+            <li
+              style="list-style-type: none; display: contents; cursor: pointer;"
+            >
+              <a
+                data-discover="true"
+                href="/"
+                style="text-decoration: none;"
+              >
+                Home
+              </a>
+            </li>
+            <li
+              style="list-style-type: none; display: contents; cursor: pointer;"
+            >
+              Terms and Conditions
+            </li>
+            <li
+              style="list-style-type: none; display: contents; cursor: pointer;"
+            >
+              Privacy Policy
+            </li>
+            <li
+              style="list-style-type: none; display: contents; cursor: pointer;"
+            >
+              Collection Statement
+            </li>
+            <li
+              style="list-style-type: none; display: contents; cursor: pointer;"
+            >
+              Help
+            </li>
+            <li
+              style="list-style-type: none; display: contents; cursor: pointer;"
+            >
+              Manage Account
+            </li>
+          </ul>
+        </nav>
+        Copyright © 2016 DEMO Streaming, All Right Reserved.
+        <div
+          style="margin-top: 50px;"
+        >
+          <ul
+            id="footer-social"
+            style="display: flex; align-items: center; padding: 0px; float: left;"
+          >
+            <li
+              style="list-style-type: none; display: block; cursor: pointer; height: 30px; background-position: right center; background-repeat: no-repeat; background-size: contain; background-image: url("/social/facebook-blue.svg");"
+            >
+              <img
+                alt="Facebook"
+                src="/social/facebook-white.svg"
+                style="height: 100%;"
+              />
+            </li>
+            <li
+              style="list-style-type: none; display: block; cursor: pointer; height: 30px; background-position: right center; background-repeat: no-repeat; background-size: contain; background-image: url("/social/twitter-blue.svg");"
+            >
+              <img
+                alt="X"
+                src="/social/twitter-white.svg"
+                style="height: 100%;"
+              />
+            </li>
+            <li
+              style="list-style-type: none; display: block; cursor: pointer; height: 30px; background-position: right center; background-repeat: no-repeat; background-size: contain; background-image: url("/social/instagram-blue.svg");"
+            >
+              <img
+                alt="Instagram"
+                src="/social/instagram-white.svg"
+                style="height: 100%;"
+              />
+            </li>
+          </ul>
+          <ul
+            id="footer-stores"
+            style="display: flex; align-items: center; padding: 0px; float: right;"
+          >
+            <li
+              style="list-style-type: none; display: block; cursor: pointer; height: 30px;"
+            >
+              <img
+                alt="Apple Store"
+                src="/store/app-store.svg"
+                style="height: 100%;"
+              />
+            </li>
+            <li
+              style="list-style-type: none; display: block; cursor: pointer; height: 30px;"
+            >
+              <img
+                alt="Play Store"
+                src="/store/play-store.svg"
+                style="height: 100%;"
+              />
+            </li>
+            <li
+              style="list-style-type: none; display: block; cursor: pointer; height: 30px;"
+            >
+              <img
+                alt="Windows Store"
+                src="/store/windows-store.svg"
+                style="height: 100%;"
+              />
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      style="display: box; width: 100%; position: fixed; top: 0px; left: 0px;"
+    >
+      <div
+        style="display: box; width: calc(100% - 200px); height: 30px; background: linear-gradient(0deg,rgb(46, 149, 250) 0%, rgb(18, 100, 246) 100%); box-shadow: 0px 3px 3px rgb(45, 45, 45); position: relative; z-index: 1; padding: 10px 100px 10px 100px; color: white; font-size: 25px;"
+      >
+        DEMO Streaming
+        <div
+          style="padding-top: 10px; padding-bottom: 10px; font-size: 10px; float: right;"
+        >
+          <span
+            style="margin-right: 10px;"
+          >
+            Log in
+          </span>
+          <div
+            style="color: white; background: linear-gradient(0deg,rgb(68, 68, 68) 0%, rgb(51, 51, 51) 100%); display: inline; padding: 10px;"
+          >
+            Start your free trial
+          </div>
+        </div>
+      </div>
+      <div
+        style="display: box; width: calc(100% - 200px); height: 30px; background: rgb(65, 65, 65); padding: 10px 100px 10px 100px; color: white; font-size: 25px;"
+      />
+    </header>
+    <main
+      style="margin-top: 100px; padding: 20px 100px 200px 100px;"
+    >
+      test content
+    </main>
+    <footer
+      style="background-color: rgb(30, 30, 30); display: block; width: calc(100% - 200px); color: rgb(195, 192, 187); font-size: 10px; padding-right: 100px; padding-left: 100px; position: absolute; height: 200px; bottom: 0px;"
+    >
+      <nav>
+        <ul
+          id="footer-nav"
+          style="display: flex; align-items: center; padding: 0px;"
+        >
+          <li
+            style="list-style-type: none; display: contents; cursor: pointer;"
+          >
+            <a
+              data-discover="true"
+              href="/"
+              style="text-decoration: none;"
+            >
+              Home
+            </a>
+          </li>
+          <li
+            style="list-style-type: none; display: contents; cursor: pointer;"
+          >
+            Terms and Conditions
+          </li>
+          <li
+            style="list-style-type: none; display: contents; cursor: pointer;"
+          >
+            Privacy Policy
+          </li>
+          <li
+            style="list-style-type: none; display: contents; cursor: pointer;"
+          >
+            Collection Statement
+          </li>
+          <li
+            style="list-style-type: none; display: contents; cursor: pointer;"
+          >
+            Help
+          </li>
+          <li
+            style="list-style-type: none; display: contents; cursor: pointer;"
+          >
+            Manage Account
+          </li>
+        </ul>
+      </nav>
+      Copyright © 2016 DEMO Streaming, All Right Reserved.
+      <div
+        style="margin-top: 50px;"
+      >
+        <ul
+          id="footer-social"
+          style="display: flex; align-items: center; padding: 0px; float: left;"
+        >
+          <li
+            style="list-style-type: none; display: block; cursor: pointer; height: 30px; background-position: right center; background-repeat: no-repeat; background-size: contain; background-image: url("/social/facebook-blue.svg");"
+          >
+            <img
+              alt="Facebook"
+              src="/social/facebook-white.svg"
+              style="height: 100%;"
+            />
+          </li>
+          <li
+            style="list-style-type: none; display: block; cursor: pointer; height: 30px; background-position: right center; background-repeat: no-repeat; background-size: contain; background-image: url("/social/twitter-blue.svg");"
+          >
+            <img
+              alt="X"
+              src="/social/twitter-white.svg"
+              style="height: 100%;"
+            />
+          </li>
+          <li
+            style="list-style-type: none; display: block; cursor: pointer; height: 30px; background-position: right center; background-repeat: no-repeat; background-size: contain; background-image: url("/social/instagram-blue.svg");"
+          >
+            <img
+              alt="Instagram"
+              src="/social/instagram-white.svg"
+              style="height: 100%;"
+            />
+          </li>
+        </ul>
+        <ul
+          id="footer-stores"
+          style="display: flex; align-items: center; padding: 0px; float: right;"
+        >
+          <li
+            style="list-style-type: none; display: block; cursor: pointer; height: 30px;"
+          >
+            <img
+              alt="Apple Store"
+              src="/store/app-store.svg"
+              style="height: 100%;"
+            />
+          </li>
+          <li
+            style="list-style-type: none; display: block; cursor: pointer; height: 30px;"
+          >
+            <img
+              alt="Play Store"
+              src="/store/play-store.svg"
+              style="height: 100%;"
+            />
+          </li>
+          <li
+            style="list-style-type: none; display: block; cursor: pointer; height: 30px;"
+          >
+            <img
+              alt="Windows Store"
+              src="/store/windows-store.svg"
+              style="height: 100%;"
+            />
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

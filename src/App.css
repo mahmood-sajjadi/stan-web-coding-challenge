@@ -1,0 +1,30 @@
+.glass {
+    position: relative;
+    overflow: hidden;
+    z-index: 0
+}
+
+.glass:before {
+    content: '';
+    position: absolute;
+    top: -70px;
+    height: 440px;
+    width: 20px;
+    background: rgba(255,255,255, 0.3);
+    filter: blur(1px);
+    box-shadow: 0 0 10px rgba(255,255,255, 0.1);
+    transform: rotate(25deg) translateX(-200px);
+}
+
+.glass:hover:before {
+    animation: shine linear 1s 1;
+}
+
+@keyframes  shine {
+    0% {
+        transform: rotate(25deg) translate(180px, 70px);
+    }
+    100% {
+        transform: rotate(25deg) translate(-180px);
+    }
+}

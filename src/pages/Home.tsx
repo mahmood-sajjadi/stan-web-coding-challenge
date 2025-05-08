@@ -4,6 +4,7 @@ import { programTypesList } from "../config";
 import { List as ListWrapper } from "../components/List";
 import { useContext, useMemo } from "react";
 import { ListContext } from "../context/ListContext";
+import { Loading } from "../components/Loading";
 
 const popularTitleStyle = {
     color: 'black',
@@ -15,6 +16,8 @@ const posterStyle = {
     lineHeight: '150px',
     fontWeight: 'bold',
     fontSize: '25px',
+    textTransform: 'uppercase',
+    backgroundSize: 'cover',
 }
 
 const linkStyle = {
@@ -37,25 +40,21 @@ export function Home() {
                     title={programType.description}
                     wrapperStyle={popularTitleStyle}
                     posterStyle={posterStyle}
+                    className="glass"
                 >
                     {programType.title}
                 </Item>
             </Link>
         ));
-    }, [])
-    switch(list.status) {
-        case 'pending':
-            return 'loading';
-        case 'error':
-            // potentially we can use list.error as well
-            return 'Error';
-        case 'success':
-            return (
-                <ListWrapper style={listStyle}>
-                {
-                    popularTitles
-                }
-                </ListWrapper>
-            )
-    }
+    }, []);
+
+    return (
+        <Loading status={list.status}>
+            <ListWrapper style={listStyle}>
+            {
+                popularTitles
+            }
+            </ListWrapper>
+        </Loading>
+    )
 }

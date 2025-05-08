@@ -1,0 +1,23 @@
+#footer-nav li + li::before {
+  content: '|';
+  padding: 0 5px;
+}
+
+#footer-nav a:visited {
+  color: inherit;
+}
+
+#footer-stores li + li::before{
+  content: '';
+  padding: 0 5px;
+}
+
+#footer-social li + li::before {
+  content: '';
+  padding: 0 5px;
+}
+
+#footer-social li img:hover {
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}

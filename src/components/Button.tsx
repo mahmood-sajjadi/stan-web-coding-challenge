@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 
 type Props = {
-    children?: React.ReactNode,
+    children?: React.ReactNode;
     style?: React.CSSProperties;
 }
 

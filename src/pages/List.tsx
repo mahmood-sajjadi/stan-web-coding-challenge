@@ -4,12 +4,13 @@ import { ListContext } from "../context/ListContext";
 import type { ProgramType } from "../config";
 import { Item } from "../components/Item";
 import { List as ListWrapper } from "../components/List";
+import { Loading } from "../components/Loading";
 
 export function List(props: { programType: ProgramType }) {
     const { programType } = props;
     const list = useContext(ListContext);
 
-    const moviesComponents = useMemo(() => {
+    const listComponents = useMemo(() => {
         if (!list.result) {
             return null;
         }
@@ -17,23 +18,19 @@ export function List(props: { programType: ProgramType }) {
             <Item key={entry.title}
                 posterArtUrl={entry.images["Poster Art"].url}
                 title={entry.title}
+                className="glass"
             />
         ));
     }, [list.result, programType]);
 
-    switch(list.status) {
-        case 'pending':
-            return 'loading';
-        case 'error':
-            // potentially we can use list.error as well
-            return 'Error';
-        case 'success':
-            return (
-                <ListWrapper>
-                {
-                    moviesComponents
-                }
-                </ListWrapper>
-            )
-    }
+
+    return (
+        <Loading status={list.status}>
+            <ListWrapper>
+            {
+                listComponents
+            }
+            </ListWrapper>
+        </Loading>
+    );
 }

@@ -7,6 +7,9 @@
     "module": "ESNext",
     "skipLibCheck": true,
 
+    // support vitest describe & it
+    "types": ["vitest/globals"],
+
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
