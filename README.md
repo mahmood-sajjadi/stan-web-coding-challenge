@@ -17,7 +17,9 @@ yarn dev
 ## RUN THE CODE
 ### Install dependencies
 clone the repository in your local machine
+
 run `yarn install` to install dependencies
+
 Other than `react` and `react-dom`, the only main dependency is `react-router-dom`
 Also there are dependencies to improve the code quality and ease of coding like `typescript`, `eslint`, `vitest`, `etc.` which they are not the main part of the app and can be ignored.
 
@@ -41,6 +43,7 @@ Run `yarn test`, it will execute all the test cases
 ### Style structure
 Styles put in components as inline style as much as possible
 The aim was prevent any unexpected override or issue with html-class names, and complexity of handling styles.
+
 As we were not suppose to use any library, this was the easiest and fastest choice
 the other option was to use the lengthy css rules to prevent unexpected surprises
 Few scenarios which was very generic (like .glass effect) or not possible to put it inline (like pseudo rules, keyframe animation, etc.) added to css file.
@@ -48,13 +51,18 @@ Few scenarios which was very generic (like .glass effect) or not possible to put
 
 ### API call structure
 There is no real API, we are using a json file as mock
+
 a proxy configured in vite config file, any call to /api/list will serve the ./challenge/feed/sample.json
+
 in react, ApiService is responsible to make this call and it is using fetch under the hood.
+
 Also an specific service `listService` created which is calling `ApiService` under the hood.
+
 considering this app is very small and simple, this complex structure may not be required.
+
 But in real life, this is required to make sure the app will be easily maintainable and extendable in the future.
-ApiService is to wrap the fetch and make handling our requirements including authentication easy
-but each specific service for each endpoint is to handle different methods like `get`, `put`, `post`, etc. with API contacts, types and logics to retry and caching in place.
+
+ApiService is to wrap the fetch and make handling our requirements including authentication easy but each specific service for each endpoint is to handle different methods like `get`, `put`, `post`, etc. with API contacts, types and logics to retry and caching in place.
 
 ### Why this complex structure
 This is a simple code and may not need such a complex structure
@@ -70,15 +78,22 @@ This will help the code to be more readable and extended.
 ## FAQ
 ### Is context a good choice for API response?
 Not in real life, as we will have pagination, or infinite scroll, or etc, and we are going to call api many time
+
 But in real life, we are not going to have one API for everything, and due to this reason the structure of the code will be completely different
+
 As this code was very simple and small, and API will be called only once, context is a good choice
+
 Also I was aiming to not adding another dependency like state managements only for this API call (it is an overkill for this case)
 
 ### Why most of the test cases are toMatchSnapshot?
 This code/challenge is mainly a CSS and Html challenge, does not hold too many logics (almost none).
+
 Due to this reason almost there is no logic to test it in unit test.
+
 But there are so many reusable elements and styles which needs to get tested.
+
 as the style is inline and the assumption is in real life applications these reusable components used in many places, changing them (even slightly) may break the UI/UX, testing the reusable components with `toMatchSnapshot` is a good choice to prevent these issues.
+
 any place that we want to make sure a logic will be applied like helper functions, logic get tested.  
 
 ### Why there are files without test?
