@@ -59,6 +59,9 @@ But there are so many reusable elements and styles which needs to get tested.
 as the style is inline and the assumption is in real life applications these reusable components used in many places, changing them (even slightly) may break the UI/UX, testing the reusable components with `toMatchSnapshot` is a good choice to prevent these issues.
 any place that we want to make sure a logic will be applied like helper functions, logic get tested.  
 
+### Why there are files without test
+Adding more tests is something that I am willing to do, but to save some time and complete the task faster, the files with more logics and test with more values prioritize over the others.
+
 ## TODO / Pending
 - Add more test cases
 - Refactor the styles to be more reusable, more structured
