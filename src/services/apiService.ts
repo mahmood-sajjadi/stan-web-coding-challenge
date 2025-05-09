@@ -37,11 +37,15 @@ export function apiServiceFactory(config: ConfigType) {
         .catch(error => {
             if (error.name === 'AbortError') {
                 // Request was cancelled
+                // TODO: improve the error handling/log
                 console.log('Fetch request cancelled');
             } else {
                 // Handle other errors
+                // TODO: improve the error handling/log
                 console.error('Fetch error:', error);
             }
+            // TODO: make the error more customized and meaningful
+            throw new Error(error);
         });
   }
 

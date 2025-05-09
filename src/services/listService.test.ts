@@ -1,6 +1,6 @@
 import {getList} from './listService'
 
-describe('Button', () => {
+describe('ListService', () => {
   it('getList should call apiService', () => {
     const fn = vi.fn() ;
     getList(fn);
