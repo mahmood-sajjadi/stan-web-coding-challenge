@@ -1,4 +1,19 @@
 # STAN challenge
+
+A front-end application built with React and TypeScript, structured for maintainability and scalability. Developed as part of a technical interview.
+
+To get started, clone the repository:
+```bash
+# to clone the repository
+git clone <this-repository-url>
+# navigate to the cloned code
+cd <repository-folder>
+# install dependencies
+yarn install
+# run the dev server
+yarn dev
+```
+
 ## RUN THE CODE
 ### Install dependencies
 clone the repository in your local machine
