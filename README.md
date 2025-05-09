@@ -41,7 +41,7 @@ But in real life, this is required to make sure the app will be easily maintaina
 ApiService is to wrap the fetch and make handling our requirements including authentication easy
 but each specific service for each endpoint is to handle different methods like `get`, `put`, `post`, etc. with API contacts, types and logics to retry and caching in place.
 
-### WHy this complex structure
+### Why this complex structure
 This is a simple code and may not need such a complex structure
 But as the assumption was this is part of a huge application, this structure will ensure maintainability, ease of onboarding engineers in the future and reusability
 This will help the code to be more readable and extended.  
