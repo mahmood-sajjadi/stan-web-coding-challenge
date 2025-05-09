@@ -54,7 +54,7 @@ There is no real API, we are using a json file as mock
 
 a proxy configured in vite config file, any call to /api/list will serve the ./challenge/feed/sample.json
 
-in react, ApiService is responsible to make this call and it is using fetch under the hood.
+in front-end code, ApiService is responsible to make this call and it is using fetch under the hood.
 
 Also an specific service `listService` created which is calling `ApiService` under the hood.
 
