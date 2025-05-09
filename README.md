@@ -3,6 +3,8 @@
 ### Install dependencies
 clone the repository in your local machine
 run `yarn install` to install dependencies
+Other than `react` and `react-dom`, the only main dependency is `react-router-dom`
+Also there are dependencies to improve the code quality and ease of coding like `typescript`, `eslint`, `vitest`, `etc.` which they are not the main part of the app and can be ignored.
 
 ### Run in dev mode
 Run `yarn dev` in terminal, it will run the dev server and print the link which you can use in you browser to see the website
@@ -38,6 +40,11 @@ considering this app is very small and simple, this complex structure may not be
 But in real life, this is required to make sure the app will be easily maintainable and extendable in the future.
 ApiService is to wrap the fetch and make handling our requirements including authentication easy
 but each specific service for each endpoint is to handle different methods like `get`, `put`, `post`, etc. with API contacts, types and logics to retry and caching in place.
+
+### WHy this complex structure
+This is a simple code and may not need such a complex structure
+But as the assumption was this is part of a huge application, this structure will ensure maintainability, ease of onboarding engineers in the future and reusability
+This will help the code to be more readable and extended.  
 
 ## Assumptions
 - The popular movies and popular series page are always going to be exactly the same, only different list will be rendered (view reused)
